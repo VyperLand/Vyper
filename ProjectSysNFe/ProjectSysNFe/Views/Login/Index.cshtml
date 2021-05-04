@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+
+<form>
+    <section class="page-header">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <!--Logo do sistema-->
+                    <img src="~/Imagens/vendas.png" width="100%" height="100%"/>
+                </div>
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                    <h3>Nome do Sitema</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="body">
+        <div class="container-fluid">
+            <div>
+                <p>Login</p>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
+                    <p>Usuario:</p>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <input type="text" id="inpUser" />
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
+                    <p>Senha:</p>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <input type="password" id="inpPwd" />
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <button type="submit" id="btnLogar">Logar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="response">
+        <p>@ViewBag.Mensage</p>
+    </section>
+
+</form>
+
