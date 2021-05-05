@@ -9,17 +9,15 @@ namespace ProjectSysNFe.Controllers
     public class LoginController : Controller
     {
         // GET: Login
-        public ActionResult Index()
+        public ActionResult Conta()
         {
             return View();
         }
 
-
         [HttpPost]
         public ActionResult Logar()
         {
-            ViewBag.Mensage = "Logado";
-            return View();
+            return Redirect("~/Home/Index");
         }
 
     }

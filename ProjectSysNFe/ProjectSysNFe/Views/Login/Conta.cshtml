@@ -1,0 +1,88 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body style="background-color: lightblue">
+    <div>
+        <form method="post" action="~/Login/Logar">
+            <div class="container" style="background-color:aliceblue;padding-top:80px;max-width:520px;height:600px;border-radius:8px">
+
+                <section class="page-header" style="margin-top:0px;">
+                    <div class="container-fluid" style="padding:15px 15px 0px 15px;max-width:420px;text-align:left;line-height:28px;">
+
+                        <div class="row row-no-gutters">
+                            <div class="col-xs-12">
+                                <!--Logo do sistema-->
+                                <img src="~/Imagens/Logo.png" width="100%" height="100%" />
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="body">
+                    <div class="container-fluid" style="padding:5px 15px 10px 15px;max-width:300px;text-align:left;line-height:28px;">
+                        <div style="text-align:center;">
+                            <p><b>Insira usuario e senha para entrar.</b></p>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                    <label class="col-form-label">Usuario:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                                    <input type="text" id="inpUser" class="form-control input-sm" placeholder="Ex.: Joao123" />
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                    <label class="col-form-label">Senha:</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                                    <input type="password" class="form-control input-sm" id="inpPwd" />
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <input type="checkbox" id="chkSalvarUser" />
+                                <label id="lblCheckSalvar">Salvar usuario e senha?</label>
+                            </div>                            
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <!--<button type="submit" id="btnLogar">Logar</button>-->
+                                <input type="submit" class="btn btn-info btn-block" value="Logar" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </form>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+</body>
+</html>
